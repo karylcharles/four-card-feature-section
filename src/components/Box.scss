@@ -1,0 +1,49 @@
+@import './App.scss';
+
+.Box{
+    background-color: #fff;
+    width: 355px;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0px 10px 20px 0px hsla(212, 86%, 64%, 0.25);
+
+    &-title{
+        margin-bottom: 1rem;
+        font-size: 2.3rem;
+    }
+
+    &-sub{
+        color: var(--grayish-blue);
+        line-height: 1.7;
+        margin-bottom: 3.5rem;
+    }
+
+    &-imgContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.move-up{
+    position: relative;
+    top: calc(50% + 1rem);
+}
+
+@media (max-width: 375px){
+    .Box{
+        width: 85%;
+        margin: 0 auto;
+
+        &-title{
+            font-size: 2rem;
+        }
+
+        &-sub{
+            font-size: 1.3rem;
+        }
+
+        &-imgContainer{
+
+        }
+    }
+}
